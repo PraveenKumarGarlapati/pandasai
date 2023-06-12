@@ -2,16 +2,17 @@ import pandas as pd
 import numpy as np
 from pandasai import PandasAI
 # from pandasai.llm.openai import OpenAI
-from settings import API
+# from settings import API
 import streamlit as st
+
 
 
 path = 'Sample_NMReport.xlsx'
 df = pd.read_excel(f'data/{path}')
 
 #Check
+API = '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'
 
-prompt = 'What is this about?'
 
 def main():
     st.title("Generate Insights")
@@ -25,7 +26,7 @@ def main():
     llm = OpenAI(api_token=API)
 
     pandas_ai = PandasAI(llm)
-    prompt_here = prompt
+    # prompt_here = prompt
     # print(pandas_ai.run(df, prompt=prompt_here))
 
     if st.button("Show Insights"):
