@@ -11,7 +11,7 @@ path = 'Sample_NMReport.xlsx'
 df = pd.read_excel(f'data/{path}')
 
 #Check
-API = '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'
+
 
 
 def main():
