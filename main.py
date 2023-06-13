@@ -11,10 +11,8 @@ import tkinter
 
 # path = 'Sample_NMReport.xlsx'
 # df = pd.read_excel(f'data/{path}')
-# prompt = 'Show a histogram please'
 
 # #Check
-# API = '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'
 
 def main():
     st.title("Upload and Display DataFrame")
